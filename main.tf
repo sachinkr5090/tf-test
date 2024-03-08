@@ -6,6 +6,7 @@ terraform {
       version = "~> 3.0.2"
     }
   }
+  /*
   cloud {
     organization = "kumarsachin437"
 
@@ -13,6 +14,7 @@ terraform {
       name = "my-TF-workspace"
     }
   }
+  */
   required_version = ">= 1.1.0"
 }
 
