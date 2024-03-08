@@ -6,7 +6,7 @@ terraform {
       version = "~> 3.0.2"
     }
   }
-  /* not needed in VCS Flow
+  /* not needed in VCS Flow of TF cloud
   cloud {
     organization = "kumarsachin437"
 
