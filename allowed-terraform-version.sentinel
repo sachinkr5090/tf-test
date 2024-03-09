@@ -1,0 +1,12 @@
+# defines the policy declared in the policy set. Sentinel code files must follow the naming convention of <policy name>.sentinel
+
+
+import "tfplan"
+import "version"
+
+# This regular expression checks whether the Terraform version used for the plan is 0.14+, 0.15+, or 1.0+
+# This policy will pass and return a value of true when the Terraform version is 1.1.0 and above.
+
+main = rule {
+  version.new(tfplan.terraform_version).greater_than("1.1.0")
+}
